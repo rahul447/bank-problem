@@ -1,0 +1,13 @@
+node_modules
+dist/**/*.js
+dist/**/*.js.map
+test/dist/**/*.js
+test/dist/**/*.js.map
+npm-debug.log
+.*.swp
+._*
+.git
+.idea/
+.idea/*
+.idea/workspace.xml
+.idea/shelf
