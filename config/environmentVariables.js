@@ -3,7 +3,7 @@
 // eslint disable no-var
 
 var environmentVariables = {
-  "CMSV2_API_LOGGING_LEVEL": process.env.CMSV2_API_LOGGING_LEVEL || "debug",
+  "CMSV2_DATASERVICE_LOGGING_LEVEL": process.env.CMSV2_DATASERVICE_LOGGING_LEVEL || "debug",
 };
 
 module.exports = environmentVariables;

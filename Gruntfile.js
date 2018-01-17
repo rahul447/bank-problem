@@ -9,6 +9,15 @@ module.exports = function (grunt) {
       },
       "dist": {
         "files": [{
+            "expand": true,
+            "cwd": "lib/",
+            "src": ["**/*.router.js"],
+            "dest": "dist/",
+            "rename": function(dest, src) {
+                return dest + src.replace('.js','.router.js');
+            },
+            "ext": ".js"
+        }, {
           "expand": true,
           "cwd": "lib/",
           "src": ["**/*.model.js"],
