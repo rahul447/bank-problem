@@ -61,11 +61,11 @@ module.exports = function (grunt) {
     }
   });
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks("grunt-babel");
-  grunt.loadNpmTasks("grunt-eslint");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-contrib-clean");
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks("grunt-babel");
+    grunt.loadNpmTasks("grunt-eslint");
+    grunt.loadNpmTasks("grunt-contrib-watch");
+    grunt.loadNpmTasks("grunt-contrib-clean");
 
   // Default task.
   grunt.registerTask("default", [
