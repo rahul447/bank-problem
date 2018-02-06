@@ -209,7 +209,7 @@
     // ECMAScript 6
     // These rules are only relevant to ES6 environments.
 
-    "arrow-parens": [2, "as-needed"],           // - require parens in arrow function arguments
+    "arrow-parens": 0,           // - require parens in arrow function arguments
     "arrow-spacing": 2,                         // - require space before/after arrow function's arrow
     "constructor-super": 2,                     // - verify calls of super() in constructors
     "generator-star-spacing": 2,                // - enforce spacing around the * in generator functions
