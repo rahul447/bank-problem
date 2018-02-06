@@ -28,6 +28,7 @@
     "method-override": "^2.3.10",
     "mongoose": "^4.13.1",
     "morgan": "~1.0.0",
+    "nodemailer": "^4.4.2",
     "path": "^0.12.7",
     "request": "^2.82.0",
     "static-favicon": "~1.0.0"
