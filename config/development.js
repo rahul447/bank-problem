@@ -7,12 +7,12 @@ const config = {
         "port": 3021
     },
     "appName": "cmsv2-dataService-es6",
-    "database":{
-        "userName":"cmsv2test1",
-        "password":"cmsv2test",
-        "port":38018,
-        "host":"35.165.232.18",
-        "databaseName":"myPat-v2Cmswthtest",
+    "database": {
+        "userName": "",
+        "password": "",
+        "port": 27017,
+        "host": "127.0.0.1",
+        "databaseName": "myPat-v2Cms-Staging"
     },
     "logger": {
         "name": "cmsv2-backend-es6",
