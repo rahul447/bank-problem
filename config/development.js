@@ -8,10 +8,10 @@ const config = {
     },
     "appName": "cmsv2-dataService-es6",
     "database": {
-        "userName": "",
-        "password": "",
-        "port": 27017,
-        "host": "127.0.0.1",
+        "userName": "mypat2cmsstaging",
+        "password": "mypat2cmsstaging",
+        "port": 38018,
+        "host": "35.165.232.18",
         "databaseName": "myPat-v2Cms-Staging"
     },
     "logger": {
