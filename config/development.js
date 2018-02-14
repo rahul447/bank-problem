@@ -1,4 +1,3 @@
-const environmentVariables = require("./environmentVariables");
 const config = {
     "mode": "development",
     "http": {
@@ -8,21 +7,21 @@ const config = {
     },
     "appName": "cmsv2-dataService-es6",
     "database": {
-        "userName": "mypat2cmsstaging",
-        "password": "mypat2cmsstaging",
+        "userName": "cmsmypat2",
+        "password": "cmsmppat22017",
         "port": 38018,
         "host": "35.165.232.18",
-        "databaseName": "myPat-v2Cms-Staging"
+        "databaseName": "myPat-v2Cms"
     },
     "logger": {
         "name": "cmsv2-backend-es6",
         "streams": [
             {
-                "level": environmentVariables.CMSV2_DATASERVICE_LOGGING_LEVEL,
+                "level": "debug",
                 "stream": process.stdout
             },
             {
-                "level": environmentVariables.CMSV2_DATASERVICE_LOGGING_LEVEL,
+                "level": "debug",
                 "path": "/var/log/cmsv2/cmsv2-dataService-es6-debug.log"
             },
             {
@@ -37,7 +36,7 @@ const config = {
     "urlPrefix": "",
     "authorization": {
         "authorize": false
-    },
+    }
     
  };
  module.exports = config;
