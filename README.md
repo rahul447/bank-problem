@@ -8,4 +8,5 @@ sudo chmod 777 cmsv2-dataService-es6-debug.log
 sudo touch cmsv2-dataService-es6-info.log
 sudo chmod 777 cmsv2-dataService-es6-info.log
 cd -
-grunt && node dist/app.js
+# for development mode
+node dev
