@@ -7,6 +7,10 @@
   "engines": {
     "node": ">=4.2.2"
   },
+  "scripts": {
+    "dev": "export NODE_ENV='development' && grunt && node dist/app.js",
+    "stage": "export NODE_ENV='staging' && grunt && node dist/app.js"
+  },
   "files": [
     "dist",
     "README.md"
