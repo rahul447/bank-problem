@@ -1,5 +1,5 @@
 const config = {
-    "mode": "development",
+    "mode": "learn",
     "http": {
         "protocol": "http",
         "domain": "127.0.0.1",
