@@ -12,7 +12,8 @@ const values = {
         'audio',
         'studyMaterial',
         'formula',
-        'file'
+        'file',
+        'course'
     ]
 };
 module.exports = values;
