@@ -14,6 +14,14 @@ const values = {
         'formula',
         'file',
         'course'
-    ]
+    ],
+    contentStatus: {
+        values: [
+            'DRAFT',
+            'PUBLISHED',
+            'DELETED'
+        ],
+        default: 'DRAFT'
+    }
 };
 module.exports = values;
