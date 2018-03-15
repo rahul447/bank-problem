@@ -12,7 +12,16 @@ const values = {
         'audio',
         'studyMaterial',
         'formula',
-        'file'
-    ]
+        'file',
+        'course'
+    ],
+    contentStatus: {
+        values: [
+            'DRAFT',
+            'PUBLISHED',
+            'DELETED'
+        ],
+        default: 'DRAFT'
+    }
 };
 module.exports = values;
