@@ -34,6 +34,11 @@ const config = {
         "isEnabled": false
     },
     "urlPrefix": "",
+    "elasticConnection":{
+        "port":9200,
+        "hostname":"localhost"
+
+    }
 
 };
 module.exports = config;
