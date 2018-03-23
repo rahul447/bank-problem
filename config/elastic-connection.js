@@ -1,8 +1,11 @@
 var elasticsearch = require('elasticsearch');
+var config=require("./start.js");
+
+var endPoint="http://"+config.elasticConnection.hostname+":"+config.elasticConnection.port
 
 var client = new elasticsearch.Client({
-  host: 'localhost:9200',
-  log: 'error'
+    host: endPoint
+
 });
 
-module.exports = client;  
+module.exports = client;
