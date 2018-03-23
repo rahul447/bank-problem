@@ -43,6 +43,11 @@ const config = {
     "urlPrefix": "",
     "authorization": {
         "authorize": false
+    },
+    "elasticConnection":{
+        "port":9200,
+        "hostname":"localhost"
+
     }
     
  };
