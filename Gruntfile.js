@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         "sourceMap": true,
         "presets": ["babel-preset-es2015"],
           "ignore": [
-              "./lib/oldcontrollers/*.*",
+              "./lib/oldcontrollers/*.controller.js",
               "./lib/ElasticScript/*.*",
               "./lib/ElasticScript/*/*.*",
           ]
