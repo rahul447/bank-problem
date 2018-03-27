@@ -5,7 +5,10 @@ module.exports = function (grunt) {
     "babel": {
       "options": {
         "sourceMap": true,
-        "presets": ["babel-preset-es2015"]
+        "presets": ["babel-preset-es2015"],
+          "ignore": [
+              "./lib/oldcontrollers/*.*"
+          ]
       },
       "dist": {
         "files": [{
@@ -58,7 +61,22 @@ module.exports = function (grunt) {
         "files": ["lib/**/*.js"],
         "tasks": ["babel:dist"]
       }
-    }
+    },
+      copy: {
+          main: {
+              files: [
+                  // includes files within path
+                  //{expand: true, src: ['lib/oldcontrollers/*'], dest: 'dist/oldcontrollers/'}
+                  {
+                      "expand": false,
+                      "cwd": "lib/oldcontrollers",
+                      "src": ["**/*.js"],
+                      "dest": "dist/oldcontrollers",
+                      "ext": ".js"
+                  }
+              ],
+          },
+      },
   });
 
     // These plugins provide necessary tasks.
@@ -66,6 +84,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-eslint");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-clean");
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task.
   grunt.registerTask("default", [
@@ -76,6 +95,7 @@ module.exports = function (grunt) {
   grunt.registerTask("buildCommon", [
     "clean",
     "babel",
+    //"copy"
     //"eslint",
   ]);
 };
