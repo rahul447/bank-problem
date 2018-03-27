@@ -94,6 +94,5 @@ module.exports = function (grunt) {
     "babel",
     "copy"
     //"eslint",
-      
   ]);
 };
