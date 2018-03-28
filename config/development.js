@@ -12,6 +12,7 @@ const config = {
         "port": 38018,
         "host": "35.165.232.18",
         "databaseName": "myPat-v2Cms"
+<<<<<<< HEAD
     },*/
     "database": {
         "userName": "mypat2cmsstaging",
