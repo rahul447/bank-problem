@@ -23,7 +23,7 @@
     "cookie-parser": "~1.0.1",
     "csv-write-stream": "^2.0.0",
     "debug": "~0.7.4",
-    "ejs": "^2.5.7",
+    "ejs": "^2.5.8",
     "elasticsearch": "^14.2.1",
     "express": "~4.0.0",
     "express-domain-middleware": "^0.1.0",
