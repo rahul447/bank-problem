@@ -1,9 +1,8 @@
 FROM node:8
 WORKDIR /app
-COPY package.json /app
-RUN npm install
 COPY . /app
-ENV NODE_ENV docker
+RUN npm install
+ARG NODE_ENV
 CMD node bin/www
 # No need to expose as this container will be referred internally
 EXPOSE 3021
