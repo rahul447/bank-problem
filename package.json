@@ -9,10 +9,13 @@
   },
   "scripts": {
     "dev": "export NODE_ENV='development' && grunt && node dist/app.js",
+<<<<<<< HEAD
 <<<<<<< ccfd8a4a6a1f2ffe5657410add8b8e16b9fec91c
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js",
     "prod": "export NODE_ENV='production' && grunt && node dist/app.js"
 =======
+=======
+>>>>>>> 025d611774bf8ff0bcd5471922bb5924f61a7cf4
     "schoolpat": "export NODE_ENV='schoolpat' && grunt && node dist/app.js",
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js"
 >>>>>>> Schoolpat configuration
