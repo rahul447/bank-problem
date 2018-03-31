@@ -1,6 +1,6 @@
 const config = {
-    "mode": "docker_production",
-    'process.env.PORT': 3021,
+    "mode": "production",
+    "appName": "cmsv2-dataService-es6",
     "database":{
         "userName":"cmsv2test2",
         "password":"cmsv2test",
@@ -11,7 +11,36 @@ const config = {
     "elasticConnection":{
         "port":9200,
         "hostname":"es.prod.mypat-internal.in"
- 
+    },
+    "http": {
+        "protocol": "http",
+        "domain": "cmsds2.prod.mypat-internal.in",
+        "port": 3021
+    },
+    "logger": {
+        "name": "cmsv2-backend-es6",
+        "streams": [
+            {
+                "level": "debug",
+                "stream": process.stdout
+            },
+            {
+                "level": "debug",
+                "path": "/var/log/cmsv2/cmsv2-dataService-es6-debug.log"
+            },
+            {
+                "level": "info",
+                "path": "/var/log/cmsv2/cmsv2-dataService-es6-info.log"
+            }
+        ]
+    },
+    "environmentVariableChecker": {
+        "isEnabled": false
+    },
+    "urlPrefix": "",
+    "authorization": {
+        "authorize": false
     }
+
  };
  module.exports = config;
