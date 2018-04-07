@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "export NODE_ENV='development' && grunt && node dist/app.js",
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js",
-    "prod": "node dist/app.js"
+    "prod": "export NODE_ENV='production' && grunt && node dist/app.js"
   },
   "files": [
     "dist",
