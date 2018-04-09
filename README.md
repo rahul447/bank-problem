@@ -11,3 +11,8 @@ sudo chmod 777 cmsv2-dataService-es6-info.log
 cd -
 # for development mode
 node dev
+
+
+# for prod 
+
+# export NODE_ENV='production' && grunt  
