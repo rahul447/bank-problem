@@ -4,7 +4,7 @@ const config = {
     "database":{
         "userName":"cmsv2test2",
         "password":"cmsv2test",
-        "port":27017,
+        "port":38018,
         "host":"mongo.prod.mypat-internal.in",
         "databaseName":"myPat-v2Cmswthtest",
     },
