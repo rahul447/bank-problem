@@ -24,7 +24,6 @@ const values = {
         default: 'DRAFT'
     },
     validAccessTypes: ['CREATE', 'UPDATE', 'DELETE', 'SHARE', 'VIEW', 'PUBLISH'],
-    features: [],     // {endpoint: '', message: 'not valid'}     //api endpoints
-    contentTypes: ['AUDIO', 'VIDEO', 'STUDYMATERIAL', 'QUESTION']
+    featureTypes: ['COURSE', 'TEST', 'FORMULA', 'PACKAGE', 'TAG', 'LANGUAGE', 'GRADE', 'TESTTYPE', 'AUDIO', 'VIDEO', 'STUDYMATERIAL', 'QUESTION']
 };
 module.exports = values;
