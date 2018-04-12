@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "export NODE_ENV='development' && grunt && node dist/app.js",
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js",
-    "prod": "export NODE_ENV='production' && grunt && node dist/app.js"
+    "prod": "node dist/app.js"
   },
   "files": [
     "dist",
@@ -19,25 +19,18 @@
   "dependencies": {
     "async": "^2.6.0",
     "bcrypt": "^1.0.3",
-    "bluebird": "^3.5.1",
     "body-parser": "~1.0.0",
     "bunyan": "^1.8.12",
     "cookie-parser": "~1.0.1",
     "csv-write-stream": "^2.0.0",
-    "debug": "~0.7.4",
-    "ejs": "^2.5.8",
     "elasticsearch": "^14.2.1",
     "express": "~4.0.0",
     "express-domain-middleware": "^0.1.0",
-    "glob": "^7.1.2",
     "helmet": "^3.12.0",
-    "jade": "~1.3.0",
     "lodash": "^4.17.5",
-    "method-override": "^2.3.10",
     "mongoose": "^4.13.12",
     "mongoose-paginate": "^5.0.3",
     "morgan": "~1.0.0",
-    "nodemailer": "^4.6.3",
     "path": "^0.12.7",
     "request": "^2.85.0",
     "static-favicon": "~1.0.0",
@@ -47,7 +40,6 @@
     "babel-eslint": "^5.0.4",
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "crypto": "^1.0.1",
     "grunt": "^0.4.5",
     "grunt-apidoc": "^0.11.0",
     "grunt-babel": "^6.0.0",
