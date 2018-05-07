@@ -4,16 +4,12 @@ const values = {
         'listpicker',
         'number',
         'text',
-
-        //content types below
         'question',
         'test',
         'video',
         'audio',
         'studyMaterial',
         'formula',
-        'file',
-        'course'
     ],
     contentStatus: {
         values: [
@@ -25,6 +21,8 @@ const values = {
     },
     validAccessTypes: ['CREATE', 'UPDATE', 'DELETE', 'SHARE', 'VIEW', 'PUBLISH'],
     featureTypes: ['COURSE', 'TEST', 'FORMULA', 'PACKAGE', 'TAG', 'LANGUAGE', 'GRADE', 'TESTTYPE', 'AUDIO', 'VIDEO', 'STUDYMATERIAL', 'QUESTION'],
-    courseItemTypes: ['scheduledTests', 'sampleTests', 'syllabus', 'testGroup']
+    courseItemTypes: ['scheduledTests', 'sampleTests', 'syllabus', 'testGroup'],
+    testTypes: ['full', 'part', 'practice', 'combined', 'sample', 'concept'],
+    testStatuses: ['Live']
 };
 module.exports = values;
