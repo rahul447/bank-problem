@@ -71,6 +71,11 @@ module.exports = function (grunt) {
                   "cwd": "lib/ElasticScript/",
                   "src": ["*.*", "**/*.*"],
                   "dest": "./dist/ElasticScript",
+              }, {
+                  "expand": true,
+                  "cwd": "lib/TestBulkUploader/",
+                  "src": ["*.*", "**/*.*"],
+                  "dest": "./dist/TestBulkUploader",
               }]
           }
       }
