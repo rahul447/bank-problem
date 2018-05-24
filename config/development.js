@@ -41,7 +41,13 @@ const config = {
         "port":9200,
         "hostname":"localhost"
 
-    }
+    },
+    "awsDetailsBulkUploader": {
+        accessKeyId: ' AKIAIOEAUJI6NIXBJT3Q',
+        secretAccessKey: '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',
+        region: 'us-west-2'
+    },
+    "pythonScriptPath": "http://127.0.0.1:5000"
     
  };
  module.exports = config;
