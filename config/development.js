@@ -7,11 +7,11 @@ const config = {
     },
     "appName": "cmsv2-dataService-es6",
     "database": {
-        "userName":"cmsv2test1",
-        "password":"cmsv2test",
-        "port":38018,
-        "host":"35.165.232.18",
-        "databaseName":"myPat-v2Cmswthtest",
+        "userName":"",
+        "password":"",
+        "port":27017,
+        "host":"127.0.0.1",
+        "databaseName":"cms-prod",
     },
     "logger": {
         "name": "cmsv2-backend-es6",
@@ -41,7 +41,13 @@ const config = {
         "port":9200,
         "hostname":"localhost"
 
-    }
+    },
+    "awsDetailsBulkUploader": {
+        accessKeyId: ' AKIAIOEAUJI6NIXBJT3Q',
+        secretAccessKey: '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',
+        region: 'us-west-2'
+    },
+    "pythonScriptPath": "http://127.0.0.1:5000"
     
  };
  module.exports = config;
