@@ -38,9 +38,5 @@ const config = {
         "isEnabled": false
     },
     "urlPrefix": "",
-    "authorization": {
-        "authorize": false
-    }
-
  };
  module.exports = config;
