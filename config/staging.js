@@ -38,7 +38,12 @@ const config = {
         "port":9200,
         "hostname":"localhost"
 
-    }
+    },
+    "awsDetailsBulkUploader": {
+        accessKeyId: ' AKIAIOEAUJI6NIXBJT3Q',
+        secretAccessKey: '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',
+        region: 'us-west-2'
+    },
 
 };
 module.exports = config;
