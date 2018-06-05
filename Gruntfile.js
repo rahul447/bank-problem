@@ -71,12 +71,21 @@ module.exports = function (grunt) {
                   "cwd": "lib/ElasticScript/",
                   "src": ["*.*", "**/*.*"],
                   "dest": "./dist/ElasticScript",
-              }, {
+              }, /*{
                   "expand": true,
                   "cwd": "lib/TestBulkUploader/",
-                  "src": ["*.*", "**/*.*"],
+                  "src": ["*.*", "**!/!*.*"],
                   "dest": "./dist/TestBulkUploader",
-              }]
+                  "dot": true,
+                  "force": true
+              }*/]
+          }
+      },
+      "exec": {
+          "moveMammoth": {
+              command: 'cp -R lib/endpoints/TestBulkUploader dist/endpoints',
+              stdout: true,
+              stderr: true
           }
       }
   });
@@ -87,6 +96,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-clean");
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-copy-force');
+    grunt.loadNpmTasks('grunt-exec');
 
   // Default task.
   grunt.registerTask("default", [
@@ -97,7 +108,8 @@ module.exports = function (grunt) {
   grunt.registerTask("buildCommon", [
     "clean",
     "babel",
-    "copy"
+    "copy",
     //"eslint",
+    "exec"
   ]);
 };
