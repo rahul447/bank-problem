@@ -43,5 +43,9 @@ const config = {
         secretAccessKey: '1HA+ZiEWZjvLA91fVsKmyEXLeRdD+Ku1P5U3lnNd',
         region: 'us-west-2'
     },
+    "testBulk": {
+        "bucket": "mypat-cms-vid-content-dev",
+        "folder": "testBulk"
+    },
  };
  module.exports = config;
