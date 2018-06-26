@@ -19,7 +19,7 @@ const values = {
         ],
         default: 'DRAFT'
     },
-    courseItemTypes: ['scheduledTests', 'sampleTests', 'syllabus', 'testGroup'],
+    courseItemTypes: ['scheduledTests', 'sampleTests', 'syllabus', 'testGroup', 'orgTest'],
     testTypes: ['full', 'part', 'practice', 'combined', 'sample', 'concept'],
     testStatuses: ['Live'],
     validAccessTypes: ["CREATE", "UPDATE", "DELETE", "SHARE", "VIEW", "PUBLISH", "EDIT", "VALIDATE"],
