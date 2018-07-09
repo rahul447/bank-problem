@@ -48,6 +48,7 @@ const config = {
         "bucket": "mypat-cms-vid-content-dev",
         "folder": "testBulk"
     },
+    "encryptKey": "supersecretkey"
 
 };
 module.exports = config;
