@@ -23,7 +23,7 @@ const values = {
     testTypes: ['full', 'part', 'practice', 'combined', 'sample', 'concept'],
     testStatuses: ['Live'],
     validAccessTypes: ["CREATE", "UPDATE", "DELETE", "SHARE", "VIEW", "PUBLISH", "EDIT", "VALIDATE"],
-    featureTypes: ['COURSE', 'TEST', 'FORMULA', 'PACKAGE', 'TAG', 'LANGUAGE', 'GRADE', 'TESTTYPE', 'AUDIO', 'VIDEO', 'STUDYMATERIAL', 'QUESTION', 'CONTENT', 'TAGS', 'RULES', 'CLIENT', 'CONTENTSETTING', 'COURSESYLLABUS', "USER"],
+    featureTypes: ['COURSE', 'TEST', 'FORMULA', 'PACKAGE', 'TAG', 'LANGUAGE', 'GRADE', 'TESTTYPE', 'AUDIO', 'VIDEO', 'STUDYMATERIAL', 'QUESTION', 'CONTENT', 'TAGS', 'RULES', 'CLIENT', 'CONTENTSETTING', 'COURSESYLLABUS', "USER", "RULE"],
     permissionType: ['PARTIAL', 'ALL']
 };
 module.exports = values;
