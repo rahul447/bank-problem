@@ -48,7 +48,8 @@ const config = {
         "bucket": "mypat-cms-vid-content-dev",
         "folder": "testBulk"
     },
-    "encryptKey": "supersecretkey"
+    "encryptKey": "supersecretkey",
+    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d"
 
 };
 module.exports = config;
