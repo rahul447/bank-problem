@@ -47,7 +47,8 @@ const config = {
         secretAccessKey: '1HA+ZiEWZjvLA91fVsKmyEXLeRdD+Ku1P5U3lnNd',
         region: 'us-west-2'
     },
-    "pythonScriptPath": "http://127.0.0.1:5000"
+    "pythonScriptPath": "http://127.0.0.1:5000",
+    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d"
     
  };
  module.exports = config;
