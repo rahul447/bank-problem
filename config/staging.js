@@ -3,7 +3,7 @@ const config = {
     "http": {
         "protocol": "http",
         "domain": "35.165.232.18",
-        "port": 3023
+        "port": 3025
     },
     "appName": "cmsv2-dataService-es6",
     /*"database": {
