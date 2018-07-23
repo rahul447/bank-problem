@@ -27,6 +27,10 @@ switch(mode) {
       
       config =require("./staging.js");
       break;
+      case "feature":
+
+      config =require("./feature.js");
+      break;
   default:
       config=require("./development.js");
   
