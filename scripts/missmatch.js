@@ -27,8 +27,7 @@ var cursor = db.questions.aggregate([
     }
 ]);
 
-var i = 0;
-while (cursor.hasNext() && i < 100) {
+while (cursor.hasNext()) {
     doc = cursor.next();
     doc.content.length > 0 && doc.content.map(con => {
         var optionSet = new Set();
@@ -39,7 +38,6 @@ while (cursor.hasNext() && i < 100) {
 
         if(con.correctAnswer.data.length !== corrAns.length) {
             print(doc.contentId+","+doc.status+","+doc.testContentId+","+doc.testStatus);
-            i++;
         }
 
     });
