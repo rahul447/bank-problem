@@ -1,4 +1,4 @@
-print("quesId,status,draftId,testId,uniqueId,testName,publishId")
+print("quesId,QuesStatus,testId,testStatus");
 var cursor = db.questions.aggregate([
     {
         "$match": {
@@ -20,13 +20,18 @@ var cursor = db.questions.aggregate([
             "draftId": 1,
             "testId": "$testsData._id",
             "uniqueId": "$testsData.uploadDetail.uniqueId",
+            "testContentId": "$testsData.contentId",
             "testName": "$testsData.name",
             "publishId": 1,
-            "_id": 0
+            "_id": 0,
+            "contentId": 1,
+            "content": 1,
+            "testStatus": "$testsData.status",
         }
     }
 ]);
 while (cursor.hasNext()) {
     jsonObject = cursor.next();
-    print(jsonObject.quesId.valueOf() + "," + jsonObject.status + ",\"" + jsonObject.draftId+"\"" + ",\"" + jsonObject.testId.join(",")+"\"" + ",\"" + jsonObject.uniqueId.join(",")+"\"" + ",\"" + jsonObject.testName.join(",")+"\"" + ",\"" + jsonObject.publishId+"\"")
+
+    print(jsonObject.contentId+","+jsonObject.status+","+jsonObject.testContentId+","+jsonObject.testStatus);
 }

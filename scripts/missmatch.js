@@ -1,4 +1,4 @@
-print("quesId,status,draftId,uniqueId,testName,publishId")
+print("quesId,QuesStatus,testId,testStatus");
 
 var cursor = db.questions.aggregate([
     {
@@ -16,16 +16,19 @@ var cursor = db.questions.aggregate([
             "status": 1,
             "draftId": 1,
             "testId": "$testsData._id",
+            "testContentId": "$testsData.contentId",
             "uniqueId": "$testsData.uploadDetail.uniqueId",
             "testName": "$testsData.name",
             "publishId": 1,
-            "_id": 0
+            "_id": 0,
+            "contentId": 1,
+            "testStatus": "$testsData.status"
         }
     }
 ]);
 
-
-while (cursor.hasNext()) {
+var i = 0;
+while (cursor.hasNext() && i < 100) {
     doc = cursor.next();
     doc.content.length > 0 && doc.content.map(con => {
         var optionSet = new Set();
@@ -35,7 +38,9 @@ while (cursor.hasNext()) {
             corrAns = con.correctAnswer.data.filter(ans => optionSet.has(ans.value));
 
         if(con.correctAnswer.data.length !== corrAns.length) {
-            print(doc.quesId.valueOf() + "," + doc.status + ",\"" + doc.draftId+"\"" + ",\"" + doc.uniqueId.join(",")+"\"" + ",\"" + doc.testName.join(",")+"\"" + ",\"" + doc.publishId+"\"")
-        };
+            print(doc.contentId+","+doc.status+","+doc.testContentId+","+doc.testStatus);
+            i++;
+        }
+
     });
 }
