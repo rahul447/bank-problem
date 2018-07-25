@@ -1,4 +1,4 @@
-print("quesId,QuesStatus,testId,testStatus");
+print("quesId,QuesStatus,testId,testName,testStatus");
 var cursor = db.questions.aggregate([
     {
         "$match": {
@@ -33,5 +33,5 @@ var cursor = db.questions.aggregate([
 while (cursor.hasNext()) {
     jsonObject = cursor.next();
 
-    print(jsonObject.contentId+","+jsonObject.status+","+jsonObject.testContentId+","+jsonObject.testStatus);
+    print(jsonObject.contentId+","+jsonObject.status+","+jsonObject.testContentId+","+jsonObject.testName+","+jsonObject.testStatus);
 }

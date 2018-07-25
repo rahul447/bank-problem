@@ -1,4 +1,4 @@
-print("quesId,QuesStatus,testId,testStatus");
+print("quesId,QuesStatus,testId,testName,testStatus");
 
 var cursor = db.questions.aggregate([
     {
@@ -37,7 +37,7 @@ while (cursor.hasNext()) {
             corrAns = con.correctAnswer.data.filter(ans => optionSet.has(ans.value));
 
         if(con.correctAnswer.data.length !== corrAns.length) {
-            print(doc.contentId+","+doc.status+","+doc.testContentId+","+doc.testStatus);
+            print(doc.contentId+","+doc.status+","+doc.testContentId+","+doc.testName+","+doc.testStatus);
         }
 
     });
