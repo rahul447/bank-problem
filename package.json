@@ -12,7 +12,8 @@
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js",
     "prod": "node dist/app.js",
     "feature": "node dist/app.js",
-    "feature1": "node dist/app.js"
+    "feature1": "node dist/app.js",
+    "feature2": "node dist/app.js"
   },
   "files": [
     "dist",
