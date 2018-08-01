@@ -24,12 +24,16 @@ switch(mode) {
       config =require("./docker_production.js");
       break;
       case "staging":
-      
       config =require("./staging.js");
       break;
       case "feature":
-
       config =require("./feature.js");
+      break;
+      case "feature1":
+      config =require("./feature1.js");
+      break;
+      case "feature2":
+      config =require("./feature2.js");
       break;
   default:
       config=require("./development.js");
