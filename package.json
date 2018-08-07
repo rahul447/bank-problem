@@ -10,7 +10,10 @@
   "scripts": {
     "dev": "export NODE_ENV='development' && grunt && node dist/app.js",
     "stage": "export NODE_ENV='staging' && grunt && node dist/app.js",
-    "prod": "node dist/app.js"
+    "prod": "node dist/app.js",
+    "feature": "node dist/app.js",
+    "feature1": "node dist/app.js",
+    "feature2": "node dist/app.js"
   },
   "files": [
     "dist",
@@ -19,16 +22,20 @@
   "dependencies": {
     "argparse": "~1.0.3",
     "async": "^2.6.0",
+    "aws-cli-js": "^2.0.2",
     "aws-sdk": "^2.243.1",
     "bcrypt": "^1.0.3",
     "bluebird": "~3.4.0",
     "body-parser": "~1.0.0",
     "bunyan": "^1.8.12",
     "cookie-parser": "~1.0.1",
+    "crypto": "^1.0.1",
+    "crypto-js": "^3.1.9-1",
     "csv-write-stream": "^2.0.0",
     "elasticsearch": "^14.2.2",
     "express": "~4.0.0",
     "express-domain-middleware": "^0.1.0",
+    "fs": "0.0.1-security",
     "helmet": "^3.12.0",
     "jszip": "~2.5.0",
     "lodash": "^4.17.10",
@@ -44,6 +51,7 @@
     "request": "^2.85.0",
     "sax": "~1.1.1",
     "static-favicon": "~1.0.0",
+    "tunnel-ssh": "^4.1.4",
     "underscore": "~1.8.3",
     "uuid": "^3.2.1",
     "uuid-v4": "^0.1.0",

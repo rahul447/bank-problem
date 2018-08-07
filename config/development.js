@@ -7,11 +7,11 @@ const config = {
     },
     "appName": "cmsv2-dataService-es6",
     "database": {
-        "userName":"cmsv2test1",
-        "password":"cmsv2test",
-        "port":38018,
-        "host":"35.165.232.18",
-        "databaseName":"myPat-v2Cmswthtest",
+        "userName": "cmsv2test1",
+        "password": "cmsv2test",
+        "port": 38018,
+        "host": "35.165.232.18",
+        "databaseName": "myPat-v2Cmswthtest",
     },
     "logger": {
         "name": "cmsv2-backend-es6",
@@ -47,7 +47,8 @@ const config = {
         secretAccessKey: '1HA+ZiEWZjvLA91fVsKmyEXLeRdD+Ku1P5U3lnNd',
         region: 'us-west-2'
     },
-    "pythonScriptPath": "http://127.0.0.1:5000"
+    "pythonScriptPath": "http://127.0.0.1:5000",
+    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d"
     
  };
  module.exports = config;
