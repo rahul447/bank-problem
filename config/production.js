@@ -49,6 +49,6 @@ const config = {
     },
     "encryptKey": "supersecretkey",
     "fiitjee-enterprise-id": "5aaca7a07c920065582c700e",
-    "skipHook": true
+    "skipHook": false
  };
  module.exports = config;
