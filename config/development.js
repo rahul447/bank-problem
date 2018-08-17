@@ -48,8 +48,9 @@ const config = {
         region: 'us-west-2'
     },
     "pythonScriptPath": "http://127.0.0.1:5000",
-    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d"
-    
+    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d",
+    "skipHook": false,
+    "appRoot": __dirname.substring(0, __dirname.lastIndexOf("/"))
  };
  module.exports = config;
  
