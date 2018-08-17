@@ -49,7 +49,7 @@ const config = {
         "folder": "testBulk"
     },
     "encryptKey": "supersecretkey",
-    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d"
-
+    "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d",
+    "skipHook": true
 };
 module.exports = config;
