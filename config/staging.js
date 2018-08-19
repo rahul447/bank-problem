@@ -36,7 +36,7 @@ const config = {
     "urlPrefix": "",
     "elasticConnection":{
         "port":9200,
-        "hostname":"localhost"
+        "hostname":"35.165.232.18"
 
     },
     "awsDetailsBulkUploader": {
