@@ -49,7 +49,7 @@ const config = {
     },
     "encryptKey": "supersecretkey",
     "fiitjee-enterprise-id": "5aaca7a07c920065582c700e",
-    "skipHook": true,
+    "skipHook": false,
     "appRoot": __dirname.substring(0, __dirname.lastIndexOf("/"))
  };
  module.exports = config;

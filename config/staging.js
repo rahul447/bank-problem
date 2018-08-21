@@ -50,7 +50,7 @@ const config = {
     },
     "encryptKey": "supersecretkey",
     "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d",
-    "skipHook": true,
+    "skipHook": false,
     "appRoot": __dirname.substring(0, __dirname.lastIndexOf("/"))
 };
 module.exports = config;
