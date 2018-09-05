@@ -34,5 +34,5 @@ var cursor = db.courses.aggregate([
 while (cursor.hasNext()) {
     jsonObject = cursor.next();
 
-    print(jsonObject._id+","+jsonObject.names[0]+","+jsonObject.schIds.join(", ")+","+jsonObject.scheduleDates.join(", "));
+    print(jsonObject._id+","+jsonObject.names[0]+","+jsonObject.schIds.join(",")+","+jsonObject.scheduleDates.join(","));
 }
