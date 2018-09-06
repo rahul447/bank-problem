@@ -26,8 +26,9 @@ var cursor = db.courses.aggregate([
         "$group": {
             _id: "$_id",
             names: { $addToSet: "$name" },
-            schIds: { $addToSet: "$courseItemData.details.schedule.scheduleID" },
-            scheduleDates: { $addToSet: "$courseItemData.details.schedule.scheduleDate" }
+            displayNames: { $addToSet: "$courseItemData.details.schedule.displayName" },
+            schIds: { $push: "$courseItemData.details.schedule.scheduleID" },
+            scheduleDates: { $push: "$courseItemData.details.schedule.scheduleDate" }
         }
     }
 ]);
