@@ -7,17 +7,11 @@ const config = {
     },
     "appName": "cmsv2-dataService-es6",
     "database": {
-        /* "userName": "mypat2cmsstaging",
+        "userName": "mypat2cmsstaging",
         "password": "mypat2cmsstaging",
         "port": 38018,
         "host": "35.165.232.18",
-        "databaseName": "myPat-v2Cms-Staging", */
-
-        "userName":"cmsv2test2",
-        "password":"cmsv2test",
-        "port":27017,
-        "host":"mongo.prod.mypat-internal.in",
-        "databaseName":"myPat-v2Cmswthtest",
+        "databaseName": "myPat-v2Cms-Staging"
     },
     "logger": {
         "name": "cmsv2-backend-es6",
@@ -56,7 +50,7 @@ const config = {
     },
     "encryptKey": "supersecretkey",
     "fiitjee-enterprise-id": "5b4319f6fb4624635ed0c70d",
-    "skipHook": true,
+    "skipHook": false,
     "appRoot": __dirname.substring(0, __dirname.lastIndexOf("/"))
 };
 module.exports = config;
