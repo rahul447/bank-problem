@@ -6,12 +6,27 @@ const config = {
         "port": 3023
     },
     "appName": "cmsv2-dataService-es6",
-    "database": {
+    /* "database": {
         "userName": "mypat2cmsstaging",
         "password": "mypat2cmsstaging",
         "port": 38018,
         "host": "35.165.232.18",
         "databaseName": "myPat-v2Cms-Staging"
+    },
+    "elasticConnection":{
+        "port":9200,
+        "hostname":"35.165.232.18"
+    }, */
+    "database":{
+        "userName":"cmsv2test2",
+        "password":"cmsv2test",
+        "port":27017,
+        "host":"mongo.prod.mypat-internal.in",
+        "databaseName":"myPat-v2Cmswthtest",
+    },
+    "elasticConnection":{
+        "port":9200,
+        "hostname":"es.prod.mypat-internal.in"
     },
     "logger": {
         "name": "cmsv2-backend-es6",
@@ -34,11 +49,6 @@ const config = {
         "isEnabled": false
     },
     "urlPrefix": "",
-    "elasticConnection":{
-        "port":9200,
-        "hostname":"35.165.232.18"
-
-    },
     "awsDetailsBulkUploader": {
         accessKeyId: ' AKIAIOEAUJI6NIXBJT3Q',
         secretAccessKey: '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',
