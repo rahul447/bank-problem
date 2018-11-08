@@ -5,12 +5,7 @@ module.exports = function (grunt) {
     "babel": {
       "options": {
         "sourceMap": true,
-        "presets": ["babel-preset-es2015"],
-          "ignore": [
-              "./lib/oldcontrollers/*.controller.js",
-              "./lib/ElasticScript/*.*",
-              "./lib/ElasticScript/*/*.*",
-          ]
+        "presets": ["babel-preset-es2015"]
       },
       "dist": {
         "files": [{
@@ -63,31 +58,7 @@ module.exports = function (grunt) {
         "files": ["lib/**/*.js"],
         "tasks": ["babel:dist"]
       }
-    },
-      "copy": {
-          "dist": {
-              "files": [{
-                  "expand": true,
-                  "cwd": "lib/ElasticScript/",
-                  "src": ["*.*", "**/*.*"],
-                  "dest": "./dist/ElasticScript",
-              }, /*{
-                  "expand": true,
-                  "cwd": "lib/TestBulkUploader/",
-                  "src": ["*.*", "**!/!*.*"],
-                  "dest": "./dist/TestBulkUploader",
-                  "dot": true,
-                  "force": true
-              }*/]
-          }
-      },
-      "exec": {
-          "moveMammoth": {
-              command: 'cp -R lib/endpoints/TestBulkUploader dist/endpoints',
-              stdout: true,
-              stderr: true
-          }
-      }
+    }
   });
 
     // These plugins provide necessary tasks.
@@ -95,9 +66,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-eslint");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-clean");
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-copy-force');
-    grunt.loadNpmTasks('grunt-exec');
 
   // Default task.
   grunt.registerTask("default", [
@@ -107,9 +75,7 @@ module.exports = function (grunt) {
   // Common build task
   grunt.registerTask("buildCommon", [
     "clean",
-    "babel",
-    "copy",
+    "babel"
     //"eslint",
-    "exec"
   ]);
 };
